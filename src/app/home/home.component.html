@@ -1,0 +1,11 @@
+
+<div class="container">
+    <div class="justify-content-center d-flex">
+      <button class="my-4 p-4 align-self-center bg-light border row-cols-2 fw-bold" style="border-radius: 10px 0px 0px 10px;" (click)="eventHandler(100);">$100K - $200K</button>
+      <button class="my-4 p-4 align-self-center bg-light border row-cols-2 fw-bold" (click)="eventHandler(200);">$200K - $300K</button>
+      <button class="my-4 p-4 align-self-center bg-light border row-cols-2 fw-bold" (click)="eventHandler(300);">$300K - $400K</button>
+      <button class="my-4 p-4 align-self-center bg-light border row-cols-2 fw-bold" (click)="eventHandler(400);">$400K - $500K</button>
+      <button class="my-4 p-4 align-self-center bg-light border row-cols-2 fw-bold" style="border-radius: 0px 10px 10px 0px;" (click)="eventHandler(500);">$500K+</button>
+    </div>
+   <router-outlet></router-outlet>
+</div>

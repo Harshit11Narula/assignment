@@ -1,0 +1,31 @@
+<div class="container" >
+<div class="row d-flex" >
+    <div class="col-auto border mx-4 my-auto w-25 h-50" *ngFor="let ele of data">
+       <div class="bg-warning text-center py-2 my-2" *ngIf="ele.popular!=''"><h6>Most Popular</h6></div>
+        <div class="bg-secondary text-light text-center py-2 my-2 fw-bold"><h6>Qualified {{ele.qualify}}</h6></div>
+        <div class="text-center my-2">
+            <div class="display-6" style="font-weight: bold;">${{ele.perQualifyLead}}</div>
+            <div class="text-dark">Per Qualified Lead</div>
+        </div>
+        <div class="text-center my-3"><hr style="width: 75%;margin: 0 auto;"></div>
+        <div class="text-center my-2">
+            <div style="font-weight: bold;">Qualified Leads Per Month</div>
+            <div class="text-dark">{{ele.qualify}}</div>
+        </div>
+        <div class="text-center my-3"><hr style="width: 75%;margin: 0 auto;"></div>
+        <div class="text-center my-2">
+            <div style="font-weight: bold;">Platform Fee Per Month</div>
+            <div class="text-dark">${{ele.perPlatformMonth}}</div>
+        </div>
+        <div class="bg-secondary text-light text-center text-center py-2 my-2"><h6>${{ele.perMonth}}/mo</h6></div>
+        <a type="button" class="w-100 text-decoration-none" *ngIf="ele.popular==''"><div (click)="openDialog(ele)" class="text-center border border-warning rounded py-2 my-2" ><h6 style="color: orange;">Start Your Trial</h6></div></a>
+        <a type="button" class="w-100 text-decoration-none" *ngIf="ele.popular!=''"><div (click)="openDialog(ele)" class="text-center bg-warning border border-warning rounded py-2 my-2" style="margin-top: -20px" ><h6>Start Your Trial</h6></div></a>
+
+    </div>
+    <div class="col-auto border mx-4 my-3 w-25 h-50">
+        <div class="bg-light text-center py-2 my-2"><h6>Enterprise</h6></div>
+        <div clas="bg-light text-center" style="height: 285px;padding-top: 135px; font-weight: bold; background-color: aqua;text-align: center; padding: auto;"> Want more than 80 qualified leads each month?</div>
+        <a type="button" class="w-100 text-decoration-none"><div class="text-center border border-warning rounded py-2 my-2"><h6 style="color: burlywood;">Get in touch</h6></div></a>
+    </div>
+</div>
+</div>

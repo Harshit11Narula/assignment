@@ -1,0 +1,9 @@
+h6 {
+    font-size: medium !important;
+    margin: auto !important;
+}
+
+a > div:hover{
+    color: #000 !important;
+    background-color: aqua;
+}
