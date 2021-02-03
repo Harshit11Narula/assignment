@@ -37,7 +37,7 @@ export class PriceComponent implements OnInit {
     this.router.navigateByUrl("/home/"+p);
   }  
   openDialog(ele:any) {
-    const dialogRef = this.dialog.open(DialogDetailsComponent,{width: '600px',height: '600px',data: {dataKey: ele}});
+    const dialogRef = this.dialog.open(DialogDetailsComponent,{width: '60%',height: '90%',data: {dataKey: ele}});
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
