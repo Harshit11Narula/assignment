@@ -1,4 +1,4 @@
-## Follow all Instruction
+## Follow the Instruction
 
 # Prerequisite Installation
 
