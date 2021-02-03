@@ -1,6 +1,6 @@
 ## Follow all Instruction
 
-# Prerequitory
+# Prerequisite Installation
 
 1. Node (https://nodejs.org/en/download/)
 2. Angular (https://cli.angular.io/) 
